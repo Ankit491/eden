@@ -14,7 +14,7 @@
 """
 
 # Remove this line when you have edited this file sufficiently to proceed to the web interface
-FINISHED_EDITING_CONFIG_FILE = False
+# FINISHED_EDITING_CONFIG_FILE = False
 
 # Select the Template
 # - which Modules are enabled
@@ -216,6 +216,11 @@ settings.frontpage.rss = [
 # - note: invalid settings are ignored
 #
 settings.import_template()
+
+settings.modules["ocr"] = Storage(
+    restricted = False,
+    module_type = None
+) 
 
 # =============================================================================
 # Over-rides to the Template may be done here
